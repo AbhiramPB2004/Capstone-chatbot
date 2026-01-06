@@ -1,0 +1,33 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - health_query
+  - language_change
+
+slots:
+  language:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        intent: language_change
+
+responses:
+  utter_greet:
+    - text: "Hello! Ask me any health-related question."
+
+  utter_goodbye:
+    - text: "Goodbye 👋 Stay healthy!"
+
+  utter_default:
+    - text: "Sorry, I didn’t understand — but I can still try to help."
+
+  utter_thanks:
+    - text: "Glad I could help 😊"
+
+actions:
+  - action_healthbot_rag
+  - action_set_language

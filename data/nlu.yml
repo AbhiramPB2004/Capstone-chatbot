@@ -1,0 +1,35 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - hello
+    - hey
+    - hi there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+
+- intent: language_change
+  examples: |
+    - english
+    - en
+    - hindi
+    - hi
+    - kannada
+    - kn
+
+- intent: health_query
+  examples: |
+    - what is dengue
+    - tell me about malaria
+    - what is fever
+    - what are covid symptoms

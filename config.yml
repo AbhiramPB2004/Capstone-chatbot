@@ -1,0 +1,15 @@
+language: en
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: CountVectorsFeaturizer
+- name: DIETClassifier
+  epochs: 60
+- name: EntitySynonymMapper
+- name: ResponseSelector
+  epochs: 60
+
+policies:
+- name: RulePolicy
+assistant_id: 20260106-124401-threadbare-nut

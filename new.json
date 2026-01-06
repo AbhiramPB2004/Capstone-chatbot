@@ -1,0 +1,622 @@
+[
+    {
+        "id": 1,
+        "disease": "Dengue",
+        "description": "A viral infection transmitted by Aedes mosquitoes causing high fever, headache, joint pain and rash. Severe dengue can be life-threatening.",
+        "prevention": "Prevent mosquito bites, remove stagnant water, use repellents and nets.",
+        "source": "WHO"
+    },
+    {
+        "id": 2,
+        "disease": "Malaria",
+        "description": "A mosquito-borne parasitic disease causing fever, chills and flu-like illness. Severe cases may affect organs.",
+        "prevention": "Avoid mosquito bites, use nets, eliminate stagnant water.",
+        "source": "WHO"
+    },
+    {
+        "id": 3,
+        "disease": "Chikungunya",
+        "description": "A viral disease transmitted by Aedes mosquitoes causing fever and severe joint pain.",
+        "prevention": "Use mosquito control and avoid mosquito exposure.",
+        "source": "WHO"
+    },
+    {
+        "id": 4,
+        "disease": "COVID-19",
+        "description": "A respiratory viral disease that can cause cough, fever, difficulty breathing and complications.",
+        "prevention": "Vaccination, mask use, hygiene and distancing.",
+        "source": "WHO"
+    },
+    {
+        "id": 5,
+        "disease": "Tuberculosis (TB)",
+        "description": "A bacterial infection affecting the lungs causing long-term cough, fever and weight loss.",
+        "prevention": "Early diagnosis, treatment adherence, vaccination.",
+        "source": "WHO"
+    },
+    {
+        "id": 6,
+        "disease": "Typhoid Fever",
+        "description": "A bacterial infection spread through contaminated food and water causing fever and abdominal pain.",
+        "prevention": "Safe water, hygiene and vaccination.",
+        "source": "WHO"
+    },
+    {
+        "id": 7,
+        "disease": "Hepatitis A",
+        "description": "A liver infection spread by contaminated food and water.",
+        "prevention": "Vaccination and hygiene practices.",
+        "source": "WHO"
+    },
+    {
+        "id": 8,
+        "disease": "Hepatitis B",
+        "description": "A viral liver infection spread through bodily fluids.",
+        "prevention": "Vaccination and safe medical practices.",
+        "source": "WHO"
+    },
+    {
+        "id": 9,
+        "disease": "Hepatitis C",
+        "description": "A viral infection that damages the liver over time.",
+        "prevention": "Safe needle use and blood screening.",
+        "source": "WHO"
+    },
+    {
+        "id": 10,
+        "disease": "Measles",
+        "description": "A highly contagious viral infection causing fever and rash.",
+        "prevention": "Vaccination.",
+        "source": "WHO"
+    },
+    {
+        "id": 11,
+        "disease": "Mumps",
+        "description": "A viral infection causing swelling of salivary glands.",
+        "prevention": "Vaccination.",
+        "source": "WHO"
+    },
+    {
+        "id": 12,
+        "disease": "Rubella",
+        "description": "A mild viral illness dangerous during pregnancy.",
+        "prevention": "Vaccination.",
+        "source": "WHO"
+    },
+    {
+        "id": 13,
+        "disease": "Polio",
+        "description": "A viral disease that may cause paralysis.",
+        "prevention": "Vaccination.",
+        "source": "WHO"
+    },
+    {
+        "id": 14,
+        "disease": "Chickenpox",
+        "description": "A viral infection causing itchy rash and fever.",
+        "prevention": "Vaccination.",
+        "source": "WHO"
+    },
+    {
+        "id": 15,
+        "disease": "Influenza (Flu)",
+        "description": "A contagious viral respiratory illness.",
+        "prevention": "Vaccination and hygiene.",
+        "source": "WHO"
+    },
+    {
+        "id": 16,
+        "disease": "Common Cold",
+        "description": "A mild viral respiratory illness.",
+        "prevention": "Handwashing and avoiding exposure.",
+        "source": "WHO"
+    },
+    {
+        "id": 17,
+        "disease": "Pneumonia",
+        "description": "A lung infection causing breathing difficulty.",
+        "prevention": "Vaccination and early treatment.",
+        "source": "WHO"
+    },
+    {
+        "id": 18,
+        "disease": "Bronchitis",
+        "description": "Inflammation of airways causing cough.",
+        "prevention": "Avoid smoking and pollution.",
+        "source": "WHO"
+    },
+    {
+        "id": 19,
+        "disease": "Asthma",
+        "description": "A chronic lung condition causing wheezing and shortness of breath.",
+        "prevention": "Avoid triggers and follow medication plans.",
+        "source": "WHO"
+    },
+    {
+        "id": 20,
+        "disease": "Chronic Obstructive Pulmonary Disease (COPD)",
+        "description": "A progressive lung disease often caused by smoking.",
+        "prevention": "Avoid smoking and pollutants.",
+        "source": "WHO"
+    },
+    {
+        "id": 21,
+        "name": "Gastroenteritis",
+        "description": "An inflammation of the stomach and intestines often caused by infection leading to vomiting and diarrhea.",
+        "prevention": "Wash hands, drink clean water, and ensure food hygiene."
+    },
+    {
+        "id": 22,
+        "name": "Cholera",
+        "description": "A bacterial infection causing severe watery diarrhea and dehydration.",
+        "prevention": "Use safe water, maintain sanitation, and practice good hygiene."
+    },
+    {
+        "id": 23,
+        "name": "Hepatitis A",
+        "description": "A viral liver infection spread mainly through contaminated food or water.",
+        "prevention": "Vaccination, handwashing, and safe food practices."
+    },
+    {
+        "id": 24,
+        "name": "Hepatitis B",
+        "description": "A viral infection of the liver spread through blood or bodily fluids.",
+        "prevention": "Vaccination and safe medical and sexual practices."
+    },
+    {
+        "id": 25,
+        "name": "Hepatitis C",
+        "description": "A viral infection of the liver transmitted mainly through blood.",
+        "prevention": "Use sterile medical equipment and avoid needle sharing."
+    },
+    {
+        "id": 26,
+        "name": "Polio",
+        "description": "A viral disease that can cause paralysis.",
+        "prevention": "Vaccination is the most effective prevention."
+    },
+    {
+        "id": 27,
+        "name": "Diphtheria",
+        "description": "A bacterial infection affecting the throat and airways.",
+        "prevention": "Vaccination and early treatment."
+    },
+    {
+        "id": 28,
+        "name": "Tetanus",
+        "description": "A serious bacterial infection causing painful muscle stiffness.",
+        "prevention": "Vaccination and proper wound care."
+    },
+    {
+        "id": 29,
+        "name": "Whooping Cough",
+        "description": "A contagious respiratory infection causing severe coughing spells.",
+        "prevention": "Vaccination and avoiding exposure."
+    },
+    {
+        "id": 30,
+        "name": "Pneumonia",
+        "description": "An infection of the lungs causing cough, fever, and breathing difficulty.",
+        "prevention": "Vaccination, hygiene, and avoiding smoking."
+    },
+    {
+        "id": 31,
+        "name": "Influenza",
+        "description": "A viral respiratory illness causing fever, cough, and fatigue.",
+        "prevention": "Annual vaccination and hygiene practices."
+    },
+    {
+        "id": 32,
+        "name": "Common Cold",
+        "description": "A mild viral respiratory illness causing runny nose and cough.",
+        "prevention": "Hand hygiene and avoiding close contact with sick individuals."
+    },
+    {
+        "id": 33,
+        "name": "Strep Throat",
+        "description": "A bacterial throat infection causing sore throat and fever.",
+        "prevention": "Avoid sharing utensils and maintain hygiene."
+    },
+    {
+        "id": 34,
+        "name": "Otitis Media",
+        "description": "An infection of the middle ear common in children.",
+        "prevention": "Vaccination and hygiene."
+    },
+    {
+        "id": 35,
+        "name": "Measles",
+        "description": "A highly contagious viral infection causing fever and rash.",
+        "prevention": "Vaccination is highly effective."
+    },
+    {
+        "id": 36,
+        "name": "Mumps",
+        "description": "A viral disease causing swelling of the salivary glands.",
+        "prevention": "Vaccination."
+    },
+    {
+        "id": 37,
+        "name": "Rubella",
+        "description": "A viral infection causing rash and fever, harmful in pregnancy.",
+        "prevention": "Vaccination."
+    },
+    {
+        "id": 38,
+        "name": "Chickenpox",
+        "description": "A contagious viral infection causing itchy blisters.",
+        "prevention": "Vaccination."
+    },
+    {
+        "id": 39,
+        "name": "Hand Foot and Mouth Disease",
+        "description": "A viral illness common in children causing sores and rash.",
+        "prevention": "Handwashing and hygiene."
+    },
+    {
+        "id": 40,
+        "name": "Scabies",
+        "description": "A skin infestation caused by mites leading to intense itching.",
+        "prevention": "Avoid skin contact with infected individuals and wash clothing."
+    },
+    {
+        "id": 41,
+        "name": "Ringworm",
+        "description": "A fungal skin infection causing circular rashes.",
+        "prevention": "Maintain skin hygiene and avoid sharing personal items."
+    },
+    {
+        "id": 42,
+        "name": "Athlete's Foot",
+        "description": "A fungal infection affecting the skin of the feet.",
+        "prevention": "Keep feet dry and wear breathable footwear."
+    },
+    {
+        "id": 43,
+        "name": "Psoriasis",
+        "description": "A chronic skin condition causing red scaly patches.",
+        "prevention": "Triggers can be reduced through stress control and skincare."
+    },
+    {
+        "id": 44,
+        "name": "Eczema",
+        "description": "A condition causing itchy and inflamed skin.",
+        "prevention": "Avoid irritants and use moisturizers."
+    },
+    {
+        "id": 45,
+        "name": "Asthma",
+        "description": "A chronic condition causing narrowing of airways and breathing problems.",
+        "prevention": "Avoid triggers and follow medical guidance."
+    },
+    {
+        "id": 46,
+        "name": "Bronchitis",
+        "description": "Inflammation of the airways causing cough and mucus production.",
+        "prevention": "Avoid smoking and respiratory irritants."
+    },
+    {
+        "id": 47,
+        "name": "Sinusitis",
+        "description": "Inflammation of sinus cavities causing facial pain and congestion.",
+        "prevention": "Treat allergies and avoid pollutants."
+    },
+    {
+        "id": 48,
+        "name": "Hypertension",
+        "description": "High blood pressure increasing risk of heart disease and stroke.",
+        "prevention": "Healthy diet, exercise, and reduced salt intake."
+    },
+    {
+        "id": 49,
+        "name": "Heart Attack",
+        "description": "Blockage of blood flow to the heart muscle.",
+        "prevention": "Control cholesterol, avoid smoking, exercise regularly."
+    },
+    {
+        "id": 50,
+        "name": "Stroke",
+        "description": "A medical emergency caused by interrupted blood supply to the brain.",
+        "prevention": "Manage blood pressure and sugar, avoid smoking."
+    },
+    {
+        "id": 51,
+        "name": "Obesity",
+        "description": "Excess body fat increasing risk of chronic diseases.",
+        "prevention": "Balanced diet and physical activity."
+    },
+    {
+        "id": 52,
+        "name": "Thyroid Disease",
+        "description": "Hormonal imbalance affecting metabolism and energy.",
+        "prevention": "Regular screening when at risk."
+    },
+    {
+        "id": 53,
+        "name": "Anemia",
+        "description": "Low red blood cells leading to fatigue and weakness.",
+        "prevention": "Adequate iron-rich diet and supplements when prescribed."
+    },
+    {
+        "id": 54,
+        "name": "Kidney Stones",
+        "description": "Small mineral deposits forming in the kidneys causing severe pain.",
+        "prevention": "Stay hydrated and reduce salt intake."
+    },
+    {
+        "id": 55,
+        "name": "Urinary Tract Infection",
+        "description": "A bacterial infection affecting the urinary system.",
+        "prevention": "Good hygiene and adequate fluid intake."
+    },
+    {
+        "id": 56,
+        "name": "Osteoporosis",
+        "description": "A condition where bones become weak and fragile.",
+        "prevention": "Calcium, vitamin D, and exercise."
+    },
+    {
+        "id": 57,
+        "name": "Arthritis",
+        "description": "Joint inflammation causing pain and stiffness.",
+        "prevention": "Healthy weight and regular movement."
+    },
+    {
+        "id": 58,
+        "name": "Cataract",
+        "description": "Clouding of the eye lens leading to vision loss.",
+        "prevention": "Eye protection and health screenings."
+    },
+    {
+        "id": 59,
+        "name": "Glaucoma",
+        "description": "Increased pressure in the eye damaging the optic nerve.",
+        "prevention": "Regular eye examinations."
+    },
+    {
+        "id": 60,
+        "name": "Epilepsy",
+        "description": "A neurological disorder causing recurrent seizures.",
+        "prevention": "Medical management and avoiding triggers."
+    },
+    {
+        "id": 61,
+        "name": "Migraine",
+        "description": "A type of headache with severe throbbing pain often with nausea.",
+        "prevention": "Stress control and trigger avoidance."
+    },
+    {
+        "id": 62,
+        "name": "Depression",
+        "description": "A mental health condition causing persistent sadness and loss of interest.",
+        "prevention": "Early support and stress management."
+    },
+    {
+        "id": 63,
+        "name": "Anxiety Disorder",
+        "description": "A condition marked by excessive worry and fear.",
+        "prevention": "Counseling and lifestyle balance."
+    },
+    {
+        "id": 64,
+        "name": "Bipolar Disorder",
+        "description": "A mental health condition causing mood swings between highs and lows.",
+        "prevention": "Regular treatment and support."
+    },
+    {
+        "id": 65,
+        "name": "Autism Spectrum Disorder",
+        "description": "A developmental condition affecting social interaction and communication.",
+        "prevention": "Early therapy and support services."
+    },
+    {
+        "id": 66,
+        "name": "ADHD",
+        "description": "A neurodevelopmental disorder affecting attention and impulse control.",
+        "prevention": "Supportive routines and therapy."
+    },
+    {
+        "id": 67,
+        "name": "Celiac Disease",
+        "description": "An autoimmune reaction to gluten affecting the intestine.",
+        "prevention": "Strict gluten-free diet."
+    },
+    {
+        "id": 68,
+        "name": "Food Poisoning",
+        "description": "Illness caused by contaminated food or water.",
+        "prevention": "Safe food handling and storage."
+    },
+    {
+        "id": 69,
+        "name": "Pancreatitis",
+        "description": "Inflammation of the pancreas causing abdominal pain.",
+        "prevention": "Avoid alcohol misuse and manage gallstones."
+    },
+    {
+        "id": 70,
+        "name": "Gallstones",
+        "description": "Hardened deposits forming in the gallbladder.",
+        "prevention": "Healthy diet and weight control."
+    },
+    {
+        "id": 71,
+        "name": "Cirrhosis",
+        "description": "Severe liver scarring often due to long-term damage.",
+        "prevention": "Limit alcohol and treat liver disease early."
+    },
+    {
+        "id": 72,
+        "name": "Liver Cancer",
+        "description": "A cancer beginning in the liver cells.",
+        "prevention": "Vaccination against hepatitis B and avoiding toxins."
+    },
+    {
+        "id": 73,
+        "name": "Breast Cancer",
+        "description": "Cancer forming in breast tissue.",
+        "prevention": "Screening and healthy lifestyle."
+    },
+    {
+        "id": 74,
+        "name": "Cervical Cancer",
+        "description": "Cancer of the cervix mainly caused by HPV infection.",
+        "prevention": "HPV vaccination and screening."
+    },
+    {
+        "id": 75,
+        "name": "Prostate Cancer",
+        "description": "Cancer affecting the prostate gland in men.",
+        "prevention": "Regular health checkups."
+    },
+    {
+        "id": 76,
+        "name": "Colon Cancer",
+        "description": "Cancer of the large intestine.",
+        "prevention": "Screening and healthy diet."
+    },
+    {
+        "id": 77,
+        "name": "Skin Cancer",
+        "description": "Cancer developing from skin cells.",
+        "prevention": "Sun protection and skin checks."
+    },
+    {
+        "id": 78,
+        "name": "Leukemia",
+        "description": "A cancer of blood-forming tissues.",
+        "prevention": "Early diagnosis improves outcomes."
+    },
+    {
+        "id": 79,
+        "name": "Lymphoma",
+        "description": "Cancer affecting the lymphatic system.",
+        "prevention": "Awareness and screening when at risk."
+    },
+    {
+        "id": 80,
+        "name": "HIV/AIDS",
+        "description": "A viral infection weakening the immune system.",
+        "prevention": "Safe practices and testing."
+    },
+    {
+        "id": 81,
+        "name": "Syphilis",
+        "description": "A sexually transmitted bacterial infection.",
+        "prevention": "Safe sexual behavior and testing."
+    },
+    {
+        "id": 82,
+        "name": "Gonorrhea",
+        "description": "A common bacterial sexually transmitted infection.",
+        "prevention": "Protection and regular screening."
+    },
+    {
+        "id": 83,
+        "name": "Herpes Simplex",
+        "description": "A viral infection causing mouth or genital sores.",
+        "prevention": "Avoid direct contact during outbreaks."
+    },
+    {
+        "id": 84,
+        "name": "PCOS",
+        "description": "A hormonal condition affecting women’s reproductive health.",
+        "prevention": "Healthy lifestyle and medical care."
+    },
+    {
+        "id": 85,
+        "name": "Endometriosis",
+        "description": "A condition where tissue similar to the uterine lining grows outside the uterus.",
+        "prevention": "Early diagnosis and care reduce complications."
+    },
+    {
+        "id": 86,
+        "name": "Menopause Symptoms",
+        "description": "Natural hormonal changes causing hot flashes and mood changes.",
+        "prevention": "Healthy lifestyle and medical advice."
+    },
+    {
+        "id": 87,
+        "name": "Infertility",
+        "description": "Difficulty conceiving a child after regular attempts.",
+        "prevention": "Healthy reproductive care and early evaluation."
+    },
+    {
+        "id": 88,
+        "name": "Malnutrition",
+        "description": "A condition caused by inadequate or unbalanced nutrition.",
+        "prevention": "Adequate diet and nutrition programs."
+    },
+    {
+        "id": 89,
+        "name": "Rickets",
+        "description": "A childhood bone condition linked to vitamin D deficiency.",
+        "prevention": "Vitamin D exposure and nutrition."
+    },
+    {
+        "id": 90,
+        "name": "Scurvy",
+        "description": "A disease caused by vitamin C deficiency.",
+        "prevention": "Adequate fruit and vegetable intake."
+    },
+    {
+        "id": 91,
+        "name": "Heat Stroke",
+        "description": "A dangerous rise in body temperature due to extreme heat exposure.",
+        "prevention": "Hydration and avoiding high heat exposure."
+    },
+    {
+        "id": 92,
+        "name": "Dehydration",
+        "description": "A condition where the body loses more fluids than it takes in.",
+        "prevention": "Drink enough water daily."
+    },
+    {
+        "id": 93,
+        "name": "Snake Bite Poisoning",
+        "description": "A medical emergency caused by venomous snake bites.",
+        "prevention": "Avoid snake habitats and seek care immediately."
+    },
+    {
+        "id": 94,
+        "name": "Dog Bite Infection",
+        "description": "Infection or rabies risk following a dog bite.",
+        "prevention": "Vaccinate pets and seek prompt medical care."
+    },
+    {
+        "id": 95,
+        "name": "Food Allergies",
+        "description": "Immune reaction to certain foods causing symptoms from mild to severe.",
+        "prevention": "Avoid trigger foods and read labels."
+    },
+    {
+        "id": 96,
+        "name": "Seasonal Allergies",
+        "description": "Allergic reaction to pollen or environmental triggers.",
+        "prevention": "Limit exposure and use preventive treatment."
+    },
+    {
+        "id": 97,
+        "name": "Burn Injuries",
+        "description": "Tissue damage caused by heat, chemicals, or electricity.",
+        "prevention": "Fire safety and protective equipment."
+    },
+    {
+        "id": 98,
+        "name": "Fractures",
+        "description": "Broken bones usually caused by injury or falls.",
+        "prevention": "Fall prevention and bone health."
+    },
+    {
+        "id": 99,
+        "name": "Dementia",
+        "description": "A decline in memory and thinking abilities affecting daily life.",
+        "prevention": "Healthy brain lifestyle and regular medical care."
+    },
+    {
+        "id": 100,
+        "name": "Parkinson's Disease",
+        "description": "A progressive neurological disorder affecting movement.",
+        "prevention": "Early diagnosis and management help quality of life."
+    }
+]

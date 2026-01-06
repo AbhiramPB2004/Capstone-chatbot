@@ -1,0 +1,99 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.log
+
+# Byte-compiled
+*.egg
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+venv310/
+.env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Rasa
+# -----------------------------
+# Trained models
+models/
+
+# Temporary files
+results/
+rasa/cache/
+.cache/
+
+# NLU & Core cache
+.rasa/
+
+# Tracker store sqlite
+events.db
+tracker.db
+
+# Conversation logs
+logs/
+*.events.json
+
+# Endpoints with secrets
+endpoints.yml
+
+# Credentials (Telegram token!)
+credentials.yml
+
+# -----------------------------
+# NGROK
+# -----------------------------
+.ngrok2/
+ngrok.log
+
+# -----------------------------
+# Data / RAG
+# -----------------------------
+# Embedding files
+health_vectors.json
+vector_store.json
+
+# Raw scrapes / datasets
+data/raw/
+datasets/
+scraped_json/
+*.csv
+*.tsv
+*.xlsx
+*.parquet
+
+# Large JSON knowledge
+who_disease_articles.json
+health_data.json
+
+# -----------------------------
+# Environment Config
+# -----------------------------
+.env.local
+.env.production
+.env.development
+*.env
+
+# -----------------------------
+# OS
+# -----------------------------
+*.swp
+*.swo
