@@ -2,34 +2,133 @@ version: "3.1"
 
 nlu:
 
+
+- intent: start
+  examples: |
+    - /start
+    - start
+    - begin
+    - get started
+
+
+
+
 - intent: greet
   examples: |
     - hello
     - hey
     - hi there
+    - नमस्ते
+    - हेलो
+    - హాయ్
+    - ഹായ്
+    - مرحبا
 
 - intent: goodbye
   examples: |
     - bye
     - goodbye
+    - see you
+    - बाय
+    - नमस्ते
+    - फिर मिलेंगे
+    - ಬೈ
 
 - intent: thanks
   examples: |
     - thanks
     - thank you
+    - thanks a lot
+    - धन्यवाद
+    - शुक्रिया
+    - ಧನ್ಯವಾದಗಳು
 
+# -------------------------------
+# LANGUAGE SELECTION INTENT
+# -------------------------------
 - intent: language_change
   examples: |
+    # English
     - english
-    - en
-    - hindi
-    - hi
-    - kannada
-    - kn
+    - English
+    - इंग्लिश
+    - ஆங்கிலம்
 
+    # Hindi
+    - hindi
+    - हिंदी
+    - हिन्दी
+    - हिन्‍दी
+
+    # Kannada
+    - kannada
+    - ಕನ್ನಡ
+    - कन्नड़
+
+# -------------------------------
+# HEALTH QUESTIONS
+# -------------------------------
 - intent: health_query
   examples: |
     - what is dengue
     - tell me about malaria
     - what is fever
     - what are covid symptoms
+    - symptoms of diabetes
+    - what is blood pressure
+    - what causes dengue
+    - explain tuberculosis
+    - what are the signs of dengue
+    - how do I know if I have malaria
+    - what are the early symptoms of cancer
+    - what is asthma
+    - how dangerous is dengue
+    - what is meant by viral fever
+    - difference between cold and flu
+    - what are the causes of high blood pressure
+    - how is diabetes diagnosed
+    - what happens in typhoid
+    - what is jaundice
+    - why do people get tuberculosis
+    - what are the symptoms of stroke
+    - first signs of heart attack
+    - what are the symptoms of thyroid problems
+    - what causes kidney failure
+    - is dengue contagious
+    - how does covid spread
+    - what is hepatitis
+    - what is cholera
+    - what are the symptoms of anemia
+    - what are common allergy symptoms
+    - what is migraine
+    - is malaria curable
+    - how to treat dengue
+    - how is tuberculosis treated
+    - what is the treatment for diabetes
+    - how long does dengue fever last
+    - what to do in case of high fever
+    - which doctor should I consult for chest pain
+    - what tests are done for dengue
+    - what is HIV
+    - what is AIDS
+    - what is epilepsy
+    - why do we get fever
+    - causes of stomach pain
+    - what are signs of infection
+    - what is pneumonia
+    - what happens in covid
+    - what causes asthma
+    - what is mental health
+    - what is depression
+    - symptoms of anxiety
+    - what is hypertension
+    - what causes obesity
+    - डेंगू क्या है
+    - मलेरिया क्या है
+    - बुखार क्या होता है
+    - डेंगू के लक्षण क्या हैं
+    - ഡെങ്കിപ്പനി എന്താണ്
+    - ഡെങ്കിപ്പനിയെക്കുറിച്ച് പറയാമോ?
+    - ജലദോഷം എന്താണ്
+    - മലേറിയ എന്താണ്
+    

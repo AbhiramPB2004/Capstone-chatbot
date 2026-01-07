@@ -6,6 +6,7 @@ intents:
   - thanks
   - health_query
   - language_change
+  - start
 
 slots:
   language:
@@ -15,10 +16,24 @@ slots:
       - type: from_text
         intent: language_change
 
+
 responses:
   utter_greet:
     - text: "Hello! Ask me any health-related question."
 
+  utter_choose_language:
+    - text: "👋 Welcome! | स्वागत है | ಸ್ವಾಗತ \n
+
+        Please choose your language:
+        अपनी भाषा चुनें:
+        ದಯವಿಟ್ಟು ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಆರಿಸಿ:
+        \n
+        🇬🇧 English (English)
+        \n
+        🇮🇳 हिंदी (Hindi)
+        \n
+        🇮🇳 ಕನ್ನಡ (Kannada)"
+    
   utter_goodbye:
     - text: "Goodbye 👋 Stay healthy!"
 

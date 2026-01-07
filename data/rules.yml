@@ -26,3 +26,9 @@ rules:
   steps:
     - intent: thanks
     - action: utter_thanks
+
+
+- rule: Handle start command
+  steps:
+    - intent: start
+    - action: utter_choose_language

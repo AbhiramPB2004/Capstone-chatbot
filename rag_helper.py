@@ -3,7 +3,7 @@ import json
 import numpy as np
 
 
-API_KEY = "AIzaSyCffZofrFQ15YxYGMZPBEJzmEj7rrLFnWg"          # <-- change this
+API_KEY = "AIzaSyDK8kMIqqdmuly6uXdJoY0TTCyG973h7QM"          # <-- change this
 LLM_MODEL = "models/gemini-2.5-flash"
 EMB_MODEL = "models/text-embedding-004"
 

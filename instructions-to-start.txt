@@ -1,0 +1,32 @@
+Step 1 :-
+
+run ngrok server at port 5005 -
+
+ngrok http 5005
+
+
+Step 2 :-
+delete old webhook by opening the link in the browser wiht YOUR_TOKEN - 
+
+https://api.telegram.org/botYOUR_TOKEN/deleteWebhook?drop_pending_updates=true
+
+
+Step 3 :-
+then set the webhook again by useing this url-
+NGROKURL - url ngrok url
+YOUR_TOKEN - bot token of telegram
+https://api.telegram.org/botYOUR_TOKEN/setWebhook?url=NGROK_URL/webhooks/telegram/webhook
+
+
+Step 4 :-
+then set the ngrok  in credential.yaml
+
+Step 5 :-
+run action server -
+
+UVLOOP_NO_EXTENSIONS=1 rasa run actions
+
+Step 6 :-
+run rasa server -
+
+UVLOOP_NO_EXTENSIONS=1 rasa run --enable-api --cors "*"
