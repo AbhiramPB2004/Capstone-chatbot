@@ -1,13 +1,10 @@
-from google import genai
+from sentence_transformers import SentenceTransformer
 import json
-
-API_KEY = "AIzaSyCffZofrFQ15YxYGMZPBEJzmEj7rrLFnWg"
-MODEL = "models/text-embedding-004"
 
 INPUT_FILE = "who_disease_articles.json"
 OUTPUT_FILE = "health_vectors.json"
 
-client = genai.Client(api_key=API_KEY)
+model = SentenceTransformer("all-MiniLM-L6-v2")
 
 with open(INPUT_FILE) as f:
     DATA = json.load(f)
@@ -20,21 +17,15 @@ for i, item in enumerate(DATA):
     url = item.get("url", "").strip()
     content = item.get("content", "").strip()
 
-    # Combine fields to embed
     text = f"{title}\n\n{content}".strip()
 
     if not text:
-        print(f"[{i+1}] ⚠️ Skipping empty record")
+        print(f"[{i+1}] Skipping empty")
         continue
 
-    print(f"[{i+1}/{len(DATA)}] Embedding: {title[:80]}")
+    print(f"[{i+1}/{len(DATA)}] Embedding: {title[:60]}")
 
-    res = client.models.embed_content(
-        model=MODEL,
-        contents=text
-    )
-
-    emb = res.embeddings[0].values  # <-- correct new SDK field
+    emb = model.encode(text).tolist()
 
     records.append({
         "title": title,

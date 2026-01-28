@@ -1,13 +1,29 @@
 from google import genai
 import json
 import numpy as np
+from sentence_transformers import SentenceTransformer
+
+embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
 
-API_KEY = "AIzaSyDK8kMIqqdmuly6uXdJoY0TTCyG973h7QM"          # <-- change this
+API_KEY = "AIzaSyCOXbrcSKVDeeijk5L56-aYwPlzk5oWiug"          # <-- change this
 LLM_MODEL = "models/gemini-2.5-flash"
-EMB_MODEL = "models/text-embedding-004"
+
 
 client = genai.Client(api_key=API_KEY)
+
+import re
+
+def clean_text(text):
+    # remove markdown symbols
+    text = re.sub(r"[*#>`_~\-]", "", text)
+
+    # remove extra blank lines
+    text = re.sub(r"\n{2,}", "\n\n", text)
+
+    return text.strip()
+
+
 
 
 # ---------- Load Vector DB ----------
@@ -67,13 +83,7 @@ Keep meaning same. Do NOT add information.
 # ---------- Vector Search ----------
 def vector_search(query, top_k=3):
 
-    # embed query
-    res = client.models.embed_content(
-        model=EMB_MODEL,
-        contents=query
-    )
-
-    qvec = res.embeddings[0].values
+    qvec = embedder.encode(query)
 
     scored = []
 
@@ -81,10 +91,10 @@ def vector_search(query, top_k=3):
         score = cosine(qvec, item["embedding"])
         scored.append((score, item["content"]))
 
-    scored.sort(reverse=True)
-    
+    scored.sort(key=lambda x: x[0], reverse=True)
 
     return [x[1] for x in scored[:top_k]]
+
 
 
 
@@ -102,19 +112,29 @@ def answer_question(user_text, lang="en"):
 
     # 3) generate response
     prompt = f"""
-Answer the health question using ONLY the context below.if its greeting respond with greeting
-donot only refrain to the context if you arre getting any medically related questions try to answer them. but maximise 
-the use of the contexxt. only answer question related to medical questions on disease any other questions pls respon with cannot answer that.
+You are a friendly medical assistant chatting on Telegram.
 
+Rules:
+- Answer ONLY medical / disease questions.
+- If greeting, greet politely.
+- Use simple human language.
+- NO markdown.
+- NO bullet points.
+- NO headings.
+- Short paragraphs.
+- Friendly tone.
+
+Use context heavily.
 
 Context:
 {context}
 
-Question:
+User Question:
 {english}
 
-Answer clearly. Avoid speculation. If unsure, say so.
+Reply like a caring doctor chatting on Telegram.
 """
+
 
     res = client.models.generate_content(
         model=LLM_MODEL,
@@ -123,5 +143,14 @@ Answer clearly. Avoid speculation. If unsure, say so.
 
     answer_en = "".join(p.text for p in res.candidates[0].content.parts)
 
-    # 4) translate back if needed
-    return translate_from_english(answer_en, lang)
+    # Clean formatting
+    answer_en = clean_text(answer_en)
+
+    # Translate back
+    final = translate_from_english(answer_en, lang)
+
+    # Clean again after translation
+    final = clean_text(final)
+
+    return final
+
